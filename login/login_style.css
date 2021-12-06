@@ -1,0 +1,88 @@
+.background {
+    background: url('bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height:100%;
+}
+
+h1{
+    position :absolute;
+    left : 700px;
+    top: 330px;
+    width: 413px;
+    height :158px;
+    overflow: visible;
+    white-space: pre;
+    font-weight: 700;
+    font-family: "Inter-Bold", "Inter", sans-serif;
+    color: #333;
+    font-size: 144px;
+    letter-spacing: -2px;
+    line-height: 1.1;
+  }
+
+input[type="email"]{
+    position: absolute;
+    left :480px;
+    top :700px;
+    width :900px;
+    height : 140px;
+   border-radius: 70px;
+    background-color:#F2ECE6;
+    border:#000000;
+    font-size: 50px;
+}
+
+input[type="password"]{
+    position: absolute;
+    left :480px;
+    top :950px;
+    width :900px;
+    height : 140px;
+    border-radius: 70px;
+    background-color:#F2ECE6;
+    border:#000000;
+    font-size: 50px;
+}
+
+::placeholder{
+    font-size:50px;
+    color: #AAAAAA;
+    text-align:center;
+}
+
+button[type="login"]{
+    position: absolute;
+    width: 316px;
+    height: 93px;
+    left:750px;
+    top : 1200px;
+    background-color: #FABB01;
+    border-radius: 60px;
+    border:#000000;
+    font-size: 50px;
+    color: white;
+
+}
+
+h2{
+    position: absolute;
+    left :560px;
+    top : 1400px;
+    width: 216px; /* 216px */
+    height: 26px; /* 26px */
+    overflow: visible;
+    white-space: pre;
+    font-family: "Arial", sans-serif;
+    color: #333;
+    font-size: 40px;
+    letter-spacing: -1.6px;
+    line-height: 1.1;
+}
+
