@@ -71,3 +71,18 @@ button[type="login"]{
 
 }
 
+h2{
+    position: absolute;
+    left :560px;
+    top : 1400px;
+    width: 216px; /* 216px */
+    height: 26px; /* 26px */
+    overflow: visible;
+    white-space: pre;
+    font-family: "Arial", sans-serif;
+    color: #333;
+    font-size: 40px;
+    letter-spacing: -1.6px;
+    line-height: 1.1;
+}
+
