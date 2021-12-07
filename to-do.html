@@ -3,10 +3,6 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-body {
-  margin: 0;
-  min-width: 250px;
-}
 
 /* Include the padding and border in an element's total width and height */
 * {
@@ -36,28 +32,16 @@ ul li {
   user-select: none;
 }
 
-/* Set all odd list items to a different color (zebra-stripes) */
-ul li:nth-child(odd) {
-  background: #f9f9f9;
-}
-
 /* Darker background-color on hover */
 ul li:hover {
   background: #ddd;
-}
-
-/* When clicked on, add a background color and strike out text */
-ul li.checked {
-  background: #888;
-  color: #fff;
-  text-decoration: line-through;
 }
 
 /* Add a "checked" mark when clicked on */
 ul li.checked::before {
   content: '';
   position: absolute;
-  border-color: #fff;
+  border-color: #c39983;
   border-style: solid;
   border-width: 0 2px 2px 0;
   top: 10px;
@@ -67,102 +51,117 @@ ul li.checked::before {
   width: 7px;
 }
 
-/* Style the close button */
-.close {
-  position: absolute;
-  right: 0;
-  top: 0;
-  padding: 12px 16px 12px 16px;
-}
-
-.close:hover {
-  background-color: #f44336;
-  color: white;
-}
-
 /* Style the header */
 .header {
-  background-color: #f44336;
-  padding: 30px 40px;
+  background-color: #c39983;
+  padding: 10px 10px 10px 10px;
   color: white;
   text-align: center;
+  border-radius: 25px;
+  height: 300px;
+  width: 272px;
+  position: absolute;
+  left: 960px;
+  top: 310px;
 }
 
-/* Clear floats after the header */
-.header:after {
-  content: "";
-  display: table;
-  clear: both;
+.eachlist {
+  background-color: #c39983;
+  padding: 10px 10px 10px 10px;
+  color: white;
+  text-align: center;
+  border-radius: 25px;
+  height: 56px;
+  width: 255px;
 }
 
 /* Style the input */
 input {
   margin: 0;
   border: none;
-  border-radius: 0;
-  width: 75%;
+  border-radius: 70px;
+  width: 80%;
   padding: 10px;
   float: left;
   font-size: 16px;
+  background-color: #f2ece6;
+
 }
 
 /* Style the "Add" button */
-.addBtn {
+.doneBtn {
   padding: 10px;
-  width: 25%;
-  background: #d9d9d9;
+  width: 40px;
+  height: 40px;
+  background: #685145;
   color: #555;
   float: left;
   text-align: center;
   font-size: 16px;
   cursor: pointer;
   transition: 0.3s;
-  border-radius: 0;
+  border-radius: 70px; 
 }
 
-.addBtn:hover {
+.doneBtn:hover {
   background-color: #bbb;
 }
+
+.background {
+    background: url('BACKGROUND/home\ page\ inbox.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height:100%;
+}
+/* 
+.doneBtn.checked::before {
+
+  background: #f2ece6;
+  border-radius: 70px; 
+} */
+
 </style>
 </head>
 <body>
 
+<div class="background"></div>
+
 <div id="myDIV" class="header">
-  <h2 style="margin:5px">My To Do List</h2>
-  <input type="text" id="myInput" placeholder="Title...">
-  <span onclick="newElement()" class="addBtn">Add</span>
-</div>
 
 <ul id="myUL">
-  <li>Hit the gym</li>
-  <li class="checked">Pay bills</li>
-  <li>Meet George</li>
-  <li>Buy eggs</li>
-  <li>Read a book</li>
-  <li>Organize office</li>
+
+<div class="eachlist">
+  <input type="text" id="myInput" placeholder="Type something...">
+  <li class="doneBtn" ></li>
+</div>
+<div class="eachlist">
+  <input type="text" id="myInput" placeholder="Type something...">
+  <li class="doneBtn"></li>
+</div>
+<div class="eachlist">
+  <input type="text" id="myInput" placeholder="Type something...">
+  <li class="doneBtn"></li>
+</div>
+<div class="eachlist">
+  <input type="text" id="myInput" placeholder="Type something...">
+  <li class="doneBtn"></li>
+</div>
+<div class="eachlist">
+  <input type="text" id="myInput" placeholder="Type something...">
+  <li class="doneBtn"></li>
+</div>
+
 </ul>
 
-<script>
-// Create a "close" button and append it to each list item
-var myNodelist = document.getElementsByTagName("LI");
-var i;
-for (i = 0; i < myNodelist.length; i++) {
-  var span = document.createElement("SPAN");
-  var txt = document.createTextNode("\u00D7");
-  span.className = "close";
-  span.appendChild(txt);
-  myNodelist[i].appendChild(span);
-}
+</div>
 
-// Click on a close button to hide the current list item
-var close = document.getElementsByClassName("close");
-var i;
-for (i = 0; i < close.length; i++) {
-  close[i].onclick = function() {
-    var div = this.parentElement;
-    div.style.display = "none";
-  }
-}
+<script>
 
 // Add a "checked" symbol when clicking on a list item
 var list = document.querySelector('ul');
@@ -172,32 +171,6 @@ list.addEventListener('click', function(ev) {
   }
 }, false);
 
-// Create a new list item when clicking on the "Add" button
-function newElement() {
-  var li = document.createElement("li");
-  var inputValue = document.getElementById("myInput").value;
-  var t = document.createTextNode(inputValue);
-  li.appendChild(t);
-  if (inputValue === '') {
-    alert("You must write something!");
-  } else {
-    document.getElementById("myUL").appendChild(li);
-  }
-  document.getElementById("myInput").value = "";
-
-  var span = document.createElement("SPAN");
-  var txt = document.createTextNode("\u00D7");
-  span.className = "close";
-  span.appendChild(txt);
-  li.appendChild(span);
-
-  for (i = 0; i < close.length; i++) {
-    close[i].onclick = function() {
-      var div = this.parentElement;
-      div.style.display = "none";
-    }
-  }
-}
 </script>
 
 </body>
