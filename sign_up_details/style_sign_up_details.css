@@ -1,0 +1,101 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Inter-Bold", "Inter", sans-serif;
+}
+
+.frame {
+    width: 1400px;
+    height: 1200px;
+    box-shadow: 5px 5px 4px 6px rgba(0, 0, 0, 0.55);
+    background-color: #fbc1ad;
+    overflow: visible;
+    border-radius: 89px;
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.frame .content {
+    width: 1250px;
+    height: 1100px;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.51);
+    background-color: #ffffff;
+    overflow: hidden;
+    border-radius: 50px;
+    padding: 1rem;
+}
+
+.content .title {
+    overflow: visible;
+    white-space: pre;
+    font-weight: 700;
+    color: #333;
+    font-size: 4rem;
+    letter-spacing: -2px;
+    line-height: 1.1;
+    margin: 1rem;
+    padding: 1rem;
+    padding-left: 0;
+}
+
+.row .question {
+    margin-bottom: 25px;
+}
+
+.question .row {
+    padding: 5px;
+}
+
+.question h2 {
+    color: #fbc1ad;
+    font-weight: 600;
+    letter-spacing: -2px;
+    line-height: 1.1;
+    letter-spacing: -2px;
+    line-height: 1.1;
+    margin-bottom: 10px;
+}
+
+.btn-primary {
+    border-radius: 500px;
+    background-color: #ebebeb;
+    color: #1a191949;
+    border: none;
+    font-weight: 500;
+    box-shadow: 2px 2px #1a191949;
+}
+
+.btn-primary-non {
+    border-radius: 500px;
+    background-color: #fbc1ad;
+    color: white;
+    border: none;
+    font-weight: 500;
+    align-self: flex-end;
+}
+
+.btn-primary:hover,
+.btn-primary:active,
+.btn-check:checked + .btn-primary {
+    background-color: #fbc1ad;
+    color: white;
+}
+
+.btn-primary-non:hover,
+.btn-check:active + .btn-primary {
+    background-color: #e2ae9d;
+}
+
+.input-cst {
+    border-radius: 500px;
+    background-color: #fbc1ad;
+    border: none;
+    box-shadow: 2px 2px #1a191949;
+}
+
+.input-cst::placeholder {
+    color: white;
+}

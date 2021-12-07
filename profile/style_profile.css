@@ -1,0 +1,136 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Inter-Bold", "Inter", sans-serif;
+}
+
+.frame {
+    width: 1400px;
+    height: 1000px;
+    box-shadow: 5px 5px 4px 6px rgba(0, 0, 0, 0.55);
+    background-color: #fadce4;
+    overflow: visible;
+    border-radius: 89px;
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.frame .content {
+    width: 1250px;
+    height: 900px;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.51);
+    background-color: #ffffff;
+    overflow: hidden;
+    border-radius: 50px;
+    padding: 1.5rem;
+}
+
+.content .title {
+    overflow: visible;
+    white-space: pre;
+    font-weight: 700;
+    color: #333;
+    font-size: 4rem;
+    letter-spacing: -2px;
+    line-height: 1.1;
+    padding: 1rem;
+    padding-left: 0;
+}
+
+.row .part {
+    padding: 10px;
+    margin-bottom: 2rem;
+}
+
+.part h2,
+.part h4,
+h6 {
+    overflow: visible;
+    white-space: pre;
+    font-weight: 700;
+    font-family: "Inter-Bold", "Inter", sans-serif;
+    color: #f87296;
+    letter-spacing: 0.2px;
+    line-height: 1.2;
+}
+
+.sect {
+    height: 50px;
+    box-shadow: 5px 6px 6px 3px rgba(0, 0, 0, 0.25);
+    background-color: #fadce4;
+    border-radius: 25px;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.sect-mini {
+    box-shadow: 3px 4px 4px 1px rgba(0, 0, 0, 0.25);
+    background-color: white;
+    border-radius: 500px;
+    display: flex;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.sect-more {
+    width: auto;
+    min-height: 200px;
+    display: block;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pinfo {
+    width: 350px;
+    height: 300px;
+    box-shadow: 5px 6px 6px 3px rgba(0, 0, 0, 0.25);
+    background-color: #fadce4;
+    border-radius: 50px;
+}
+
+.pp {
+    background-color: rgb(248, 114, 150);
+    width: 200px;
+    height: 200px;
+    border-radius: 50px;
+    position: relative;
+    top: 70px;
+}
+
+.side {
+    padding-left: 20px;
+}
+
+.btn-primary {
+    border-radius: 500px;
+    background-color: #f87296;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #c55674;
+}
+
+.pinfo-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 80px;
+    padding: 10px;
+}
+
+.pinfo-row {
+    margin-bottom: 20px;
+}
