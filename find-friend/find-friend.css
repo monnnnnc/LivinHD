@@ -74,3 +74,48 @@
 #search-icon:hover{
     opacity: 0.5;
 }
+
+.friends{
+    position: absolute;
+    z-index: 10;
+    margin-top: -37%;
+    margin-left: 5%;
+    width: 790px;
+    height: 410px;
+    overflow: scroll;
+    display: table-cell;
+}
+
+.friend-card{
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    background-color: #fff;
+    width: 95%;
+    height: 35%;
+    border-radius: 45px;
+    position: relative;
+}
+
+.friend-card img{
+    position: absolute;
+    justify-content: center;
+    margin-left: 5%;
+    margin-top: 2%;
+    height: 80%;
+    width: 16.5%;
+    background-color: rgb(29, 126, 139);
+    border-radius: 100%;
+}
+
+.friend-card h1{
+    margin-top: 0px;
+    padding-top: 30px;
+    margin-bottom: 0ex;
+    margin-left: 25%;
+}
+
+.friend-card h2{
+    margin-top: 0px;
+    margin-left: 25%;
+}
