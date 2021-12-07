@@ -10,6 +10,17 @@
     overflow: scroll;
 }
 
+.menu-nav{
+    z-index: 20;
+    position: absolute;
+    margin-left: 65%;
+    margin-top: 6%;
+    color: rgb(29, 126, 139);
+    font-size:300px;
+    border-radius: 100%;
+    font-weight: 900;
+}
+
 #search-friend{
     background-color: rgb(245, 245, 245);
     border-radius: 45px;

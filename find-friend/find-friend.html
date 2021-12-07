@@ -8,6 +8,7 @@
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="find-friend.css" rel="stylesheet">
+    <link href="../nav/nav.css" rel="stylesheet">
     <link href="../RESOURCES/website-menu-20/css/style.css" rel="stylesheet">
 
     <title>Find Friend</title>
@@ -15,7 +16,26 @@
 
 
 <body>
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)"
+            class="closebtn" onclick="closeNav()">
+            ×
+        </a>
+        <div class="overlay-content">
+            <img src="../logo/white.png" class="logo">
+            <a href="../find-friend/find-friend.html">Find Friend</a>
+            <a href="../find-session/find-session.html">Find Session</a>
+            <a href="../create-session/create-session.html">Create Session</a>
+            <a href="../main-home/main.html">Home</a>
+        </div>
+    </div>
+
+    <div content>
     <img src="../BACKGROUND/find friend.png" class="background">
+        <span style="font-size:35px;cursor:pointer" 
+         onclick="openNav()" class="menu-nav">
+            ≡
+        </span>
         <div><input id="search-friend" placeholder="Who are you searching for?"></div>
 
         <img src="../icons/search.png" id="search-icon">
@@ -101,7 +121,9 @@
                 <h1>Name</h1>
                 <h2>School Of IT</h2>
         </div>
+    </div>
         
+        <script src="../nav/nav.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,45 @@
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(29, 126, 139);
+    overflow-y: hidden;
+    transition: 1.0s;
+    z-index: 30;
+}
+
+.overlay-content {
+    position: relative;
+    top: 15%;
+    width: 100%;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.overlay a {
+    padding: 5px;
+    text-decoration: none;
+    font-size: 40px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay .logo{
+    width: 20%;
+    text-align: center;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+    color: black;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 35px;
+    font-size: 70px;
+}
