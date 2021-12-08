@@ -60,7 +60,7 @@
     z-index: 4;
     margin-right: 5%;
     margin-top: 5%;
-    height: 400px;
+    height: 390px;
     overflow: scroll;
 }
 
@@ -89,9 +89,9 @@
 .friends{
     position: absolute;
     z-index: 10;
-    margin-top: -37%;
-    margin-left: 5%;
-    width: 790px;
+    margin-top: -35%;
+    margin-left: 6%;
+    width: 810px;
     height: 410px;
     overflow: scroll;
     display: table-cell;
