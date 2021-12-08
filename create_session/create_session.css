@@ -5,6 +5,15 @@ body {
     font-family: "Inter-Bold", "Inter", sans-serif;
 }
 
+.menu-nav{
+    position: absolute;
+    z-index: 9;
+    margin-left: 80%;
+    margin-top: -62%;
+    font-weight: 5000;
+    font-size: 200px;
+}
+
 .frame {
     width: 1400px;
     height: 900px;

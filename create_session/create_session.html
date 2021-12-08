@@ -19,10 +19,30 @@
         />
 
         <link rel="stylesheet" href="create_session.css" />
+        <link href="../nav/nav.css" rel="stylesheet">
     </head>
     <body>
         <header></header>
+
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)"
+                class="closebtn" onclick="closeNav()">
+                ×
+            </a>
+            <div class="overlay-content">
+                <img src="../logo/white.png" class="logo">
+                <a href="../find-friend/find-friend.html">Find Friend</a>
+                <a href="../find-session/find-session.html">Find Session</a>
+                <a href="../create_session/create_session.html">Create Session</a>
+                <a href="../main-home/main.html">Home</a>
+            </div>
+        </div>
+
         <div class="frame">
+            <span style="font-size:35px;cursor:pointer" 
+            onclick="openNav()" class="menu-nav">
+            ≡
+            </span>
             <div class="content">
                 <h1 class="title">Create Your Own Session</h1>
                 <div class="container">
@@ -97,5 +117,6 @@
             integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
             crossorigin="anonymous"
         ></script>
+        <script src="../nav/nav.js"></script>
     </body>
 </html>
