@@ -1,0 +1,448 @@
+
+/* Include the padding and border in an element's total width and height */
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Remove margins and padding from the list */
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style the list items */
+  ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    list-style-type: none;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+    
+    /* make the list items unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Darker background-color on hover */
+  ul li:hover {
+    background: #ddd;
+  }
+  
+  /* Add a "checked" mark when clicked on */
+  ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #c39983;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+  }
+  
+  /* Style the header */
+  .header {
+    background-color: #c39983;
+    padding: 10px 10px 10px 10px;
+    color: white;
+    text-align: center;
+    border-radius: 25px;
+    height: 300px;
+    width: 272px;
+    position: absolute;
+    left: 950px;
+    top: 310px;
+  }
+  
+  .eachlist {
+    background-color: #c39983;
+    padding: 10px 10px 10px 10px;
+    color: white;
+    text-align: center;
+    border-radius: 25px;
+    height: 56px;
+    width: 255px;
+  }
+  
+  /* Style the input */
+  input {
+    margin: 0;
+    border: none;
+    border-radius: 70px;
+    width: 80%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+    background-color: #f2ece6;
+  
+  }
+  
+  /* Style the "Add" button */
+  .doneBtn {
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    background: #685145;
+    color: #555;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 70px; 
+  }
+  
+  .doneBtn:hover {
+    background-color: #f2ece6;
+  }
+  
+  .background {
+      background: url('../BACKGROUND/home\ page\ inbox.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: -1;
+      height:100%;
+      overflow-y: scroll; 
+  }
+
+
+
+
+  .frame{
+    margin-left:5%;
+    z-index: 4;
+    margin-right: 5%;
+    margin-top: 1%;
+    height: 360px;
+    overflow-y: scroll;
+  }
+  .frame::-webkit-scrollbar {
+    display: none;
+  }
+  .scroll {
+    margin-left:24%;
+    margin-right: 28%;
+    margin-top: 1%;
+    height: 365px;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    background-color: white;
+    padding-bottom: 1%;
+  }
+  .timetable {
+    width: auto; /* 523px */
+    height: auto; /* 120px */
+    overflow: visible;
+    white-space: pre;
+    font-weight: 400;
+    font-style: normal;
+    font-family: "Jua", serif;
+    color: #ffffff;
+    font-size: 50px;
+    letter-spacing: 0px;
+    line-height: 1.2;
+    text-align: center;
+  }
+  .unit {
+    width: auto; /* 699px */
+    height: auto; /* 94px */
+    overflow: visible;
+    white-space: pre;
+    font-weight: 400;
+    font-style: normal;
+    font-family: "Jua", serif;
+    color: #000000;
+    font-size: 40px;
+    letter-spacing: 0px;
+    line-height: 1.2;
+  }
+  .teacher {
+    width: auto; /* 298px */
+    height: auto; /* 76px */
+    overflow: visible;
+    white-space: pre;
+    font-weight: 400;
+    font-style: normal;
+    font-family: "Jua", serif;
+    color: #7b6f6f;
+    font-size: 25px;
+    letter-spacing: 0px;
+    line-height: 1.2;
+  }
+  .zoom-link {
+    width: auto; /* 233px */
+    height: auto; /* 58px */
+    overflow: visible;
+    white-space: pre;
+    font-weight: 400;
+    font-style: normal;
+    font-family: "Jua", serif;
+    color: #bfb0b0;
+    font-size: 20px;
+    letter-spacing: 0px;
+    line-height: 1.2;
+  }
+  .time {
+    width: auto; /* 223px */
+    height: auto; /* 120px */
+    overflow: visible;
+    white-space: pre;
+    font-weight: 400;
+    font-style: normal;
+    font-family: "Jua", serif;
+    color: #DBCFC5;
+    font-size: 100px;
+    letter-spacing: 0px;
+    line-height: 1.2;
+  }
+  .timetable-frame {
+    margin-left:1%;
+    margin-right: 1%;
+    margin-top: 3%;
+    height: 50px;
+    background-color: #dbcfc5;
+    overflow: visible;
+    border-radius: 70px;
+    padding-bottom: 3%;
+  }
+  .unit-frame {
+    margin-left:1%;
+    margin-right: 1%;
+    margin-top: 5%;
+    margin-bottom: 1%;
+    height: 150px;
+    background-color: #ffdf6f;
+    overflow: visible;
+    border-radius: 25px;
+    padding-top: 4%;
+    padding-left: 10%;
+    z-index: 9;
+  }
+  .time-frame {
+    width: 332px;
+    height: 332px;
+    background-color: #ffffff;
+    overflow: visible;
+  }
+
+
+
+
+  .clock-frame {
+    background-color: #685145;
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+    border-radius: 25px;
+    height: 50px;
+    width: 272px;
+    position: absolute;
+    left: 75%;
+    top: 30%;
+  }
+  .clock {
+    color: #f2ece6;
+    font-size: 25px;
+    font-family: 'Righteous', cursive;
+    letter-spacing: 7px;
+  }
+
+
+
+
+  .date-frame {
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+    border-radius: 25px;
+    height: 50px;
+    width: 272px;
+    position: absolute;
+    left: 50%;
+    top: 5%;
+  }
+  .date {
+    color: #685145;
+    font-size: 20px;
+    font-family: 'serif';
+    letter-spacing: 0px;
+  }
+
+
+
+
+
+  .frame-calender{
+    margin-left:5%;
+    z-index: 4;
+    margin-right: 5%;
+    margin-top: 7%;
+    height: 132px;
+    overflow-x: scroll;
+  }
+  .frame-calender::-webkit-scrollbar {
+    display: none;
+  }
+  .scroll-calender {
+    margin-left:24%;
+    margin-right: 28%;
+    margin-top: 7%;
+    height: 137px;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    background-color: white;
+    padding-bottom: 1%;
+  }
+  .grid {
+    display: grid;
+    grid-template-rows: repeat(var(--bs-rows, 1), 1fr);
+    grid-template-columns: repeat(var(--bs-columns, 14), 1fr);
+    gap: var(--bs-gap, 0.1rem);
+  }
+  .calender {
+      width: 149px;
+      height: 100px;
+      overflow: hidden;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      word-break: break-word;
+      font-weight: 400;
+      font-style: normal;
+      font-family: "Jua", serif;
+      color: #C39983;
+      font-size: 30px;
+      letter-spacing: 0px;
+      line-height: 1.1;
+      text-align: center;
+      margin-top: 25%;
+  }
+  #slideLeft{
+    content: '';
+    position: absolute;
+    border-color: #c39983;
+    border-style: solid;
+    border-width: 0 5px 5px 0;
+    top: 25%;
+    left: 25%;
+    transform: rotate(135deg);
+    height: 5px;
+    width: 5px;
+  }
+  #slideRight {
+    content: '';
+    position: absolute;
+    border-color: #c39983;
+    border-style: solid;
+    border-width: 0 5px 5px 0;
+    top: 25%;
+    left: 69%;
+    transform: rotate(335deg);
+    height: 5px;
+    width: 5px;
+  }
+
+  
+
+
+
+  .navigation{
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+    border-radius: 25px;
+    height: 300px;
+    width: 1000px;
+    position: absolute;
+    left: 50px;
+    top: 100px;
+  }
+  .eachbutton{
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+    border-radius: 25px;
+    height: 56px;
+    width: 242px;
+  }
+  .nav-button{
+    margin-left: 3%;
+    margin-top: 1%;
+    border: none;
+    border-top-left-radius: 70px;
+    border-bottom-left-radius: 70px;
+    width: 100%;
+    padding: 10px;
+    float: left;
+    font-size: 35px;
+    background-color: #dbcfc5;
+    color: white;
+    transition: 0.2s;
+  }
+  .nav-button-other{
+    margin-left: 3%;
+    margin-top: 1%;
+    border: none;
+    border-top-left-radius: 70px;
+    border-bottom-left-radius: 70px;
+    width: 100%;
+    padding: 10px;
+    float: left;
+    color: #dbcfc5;
+    font-size: 35px;
+    background-color: white;  
+    transition: 0.2s;
+  }
+  .nav-button-other:hover {
+    background: lightblue;
+  }
+  .nav-button:hover {
+    background: lightblue;
+  }
+
+
+
+
+
+
+
+
+.profile{
+    height: 175px;
+    width: 272px;
+    position: absolute;
+    left: 75%;
+    top: 6%;
+}
+
+.profile img{
+    position: absolute;
+    height: 75%;
+    width: 50%;
+    background-color: #c39983;
+    border-radius: 25px;
+}
+
+.profile h1{
+    margin-left: 55%;
+    margin-top: 0%;
+}
+
+.profile h2{
+    margin-left: 55%;
+    margin-top: 0%;
+}
+
+.profile button{
+  margin-left: 0%;
+  background-color: #c39983;
+  border-radius: 70px;
+  width: 100%;
+  font-size: 16px;
+}
