@@ -18,21 +18,22 @@
             rel="stylesheet"
         />
         <link rel="stylesheet" href="style_find_study_session.css" />
-        <link href="../nav/nav.css" rel="stylesheet">
-
+        <link href="../nav/nav.css" rel="stylesheet" />
     </head>
     <body>
-        <header></header>
         <div id="myNav" class="overlay">
-            <a href="javascript:void(0)"
-                class="closebtn" onclick="closeNav()">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
                 ×
             </a>
             <div class="overlay-content">
-                <img src="../logo/white.png" class="logo">
+                <img src="../logo/white.png" class="logo" />
                 <a href="../find-friend/find-friend.html">Find Friend</a>
-                <a href="../find-session/find_study_session.html">Find Session</a>
-                <a href="../create_session/create_session.html">Create Session</a>
+                <a href="../find-session/find_study_session.html"
+                    >Find Session</a
+                >
+                <a href="../create_session/create_session.html"
+                    >Create Session</a
+                >
                 <a href="../main-home/main.html">Home</a>
             </div>
         </div>
@@ -42,67 +43,28 @@
                 <div class="row">
                     <div class="col-7">
                         <div class="content">
-                            <span style="font-size:35px;cursor:pointer" 
-                                onclick="openNav()" class="menu-nav">
-                                ≡
-                            </span>
-
-                            <h1 class="title">Find study session</h1>
-                            <div><input id="search-session" placeholder="What unit are you searching for?">
+                            <div class="header">
+                                <span
+                                    style="font-size: 35px; cursor: pointer"
+                                    onclick="openNav()"
+                                    class="menu-nav"
+                                >
+                                    ≡
+                                </span>
+                                <h1 class="title">Find study session</h1>
+                                <input
+                                    id="search-session"
+                                    placeholder="Search for a study session"
+                                />
                             </div>
-
-                            <img src="../icons/search.png" id="search-icon">
 
                             <div class="sessions">
-                                <div class="session-card">
-                                    <img src="../icons/person.png">
-                                    <h1>Name</h1>
-                                    <h2>School Of IT</h2>
-                                </div>
-                    
-                                <div class="session-card">
-                                    <img src="../icons/person.png">
-                                    <h1>Name</h1>
-                                    <h2>School Of IT</h2>
-                                </div>
-                    
-                                <div class="session-card">
-                                    <img src="../icons/person.png">
-                                    <h1>Name</h1>
-                                    <h2>School Of IT</h2>
-                                </div>
-                    
-                                <div class="session-card">
-                                    <img src="../icons/person.png">
-                                    <h1>Name</h1>
-                                    <h2>School Of IT</h2>
-                                </div>
-                    
-                                <div class="session-card">
-                                    <img src="../icons/person.png">
-                                    <h1>Name</h1>
-                                    <h2>School Of IT</h2>
-                                </div>
-                    
-                                <div class="session-card">
-                                    <img src="../icons/person.png">
-                                    <h1>Name</h1>
-                                    <h2>School Of IT</h2>
-                                </div>
-                    
-                                <div class="session-card">
-                                    <img src="../icons/person.png">
-                                    <h1>Name</h1>
-                                    <h2>School Of IT</h2>
-                                </div>
-                    
-                                <div class="session-card">
-                                    <img src="../icons/person.png">
-                                    <h1>Name</h1>
-                                    <h2>School Of IT</h2>
+                                <div class="session-card"></div>
+                                <div class="session-card"></div>
+                                <div class="session-card"></div>
+                                <div class="session-card"></div>
+                                <div class="session-card"></div>
                             </div>
-                        </div>
-
                         </div>
                     </div>
                     <div class="col-5">
@@ -139,6 +101,5 @@
             crossorigin="anonymous"
         ></script>
         <script src="../nav/nav.js"></script>
-        
     </body>
 </html>
