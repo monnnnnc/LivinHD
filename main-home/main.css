@@ -1,6 +1,28 @@
+/* .background {
+    background: url('home-page-bg.png');
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 125%;
+    overflow: scroll;
+} */
+
 .background {
     background: url('home-page-bg.png');
-    background-repeat: no-repeat;
+    width: 2480px;
+    height: 1388px;
+    box-shadow: 5px 5px 4px 6px rgba(0, 0, 0, 0.55);
+    background-color: #f2ece6;
+    overflow: visible;
+    border-radius: 89px;
+  }
+
+/* .background {
+    background: url('home-page-bg.png');
     background-size: cover;
     position: absolute;
     top: 0;
@@ -9,4 +31,713 @@
     right: 0;
     z-index: -1;
     height:100%;
+    overflow-y: scroll; 
+} */
+
+
+/* Include the padding and border in an element's total width and height */
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Remove margins and padding from the list */
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style the list items */
+  ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    list-style-type: none;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+    
+    /* make the list items unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Darker background-color on hover */
+  ul li:hover {
+    background: #ddd;
+  }
+  
+  /* Add a "checked" mark when clicked on */
+  ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #c39983;
+    border-style: solid;
+    border-width: 0 5px 5px 0;
+    top: 13px;
+    left: 30px;
+    transform: rotate(45deg);
+    height: 40px;
+    width: 20px;
+  }
+  
+  /* .header-1 {
+    text-align: left;
+    color:#c39983; 
+    height: 50%;
+    width: 23%;
+    position: absolute;
+    left: 77%;
+    top: 40%;
+  } */
+
+  /* Style the header */
+  .header {
+    background-color: #c39983;
+    padding: 10px 10px 10px 10px;
+    color: white;
+    text-align: center;
+    border-radius: 50px;
+    height: 50%;
+    width: 20%;
+    position: absolute;
+    left: 76%;
+    top: 55%;
+  }
+  
+  .eachlist {
+    padding: 20px 20px 20px 20px;
+    text-align: center;
+    border-radius: 70px;
+    height: 20%;
+    width: 100%;
+  }
+  
+  /* Style the input */
+  input {
+    margin-top: 7%;
+    border: none;
+    border-radius: 70px;
+    width: 80%;
+    padding: 20px;
+    float: left;
+    font-size: 30px;
+    background-color: #f2ece6;
+  
+  }
+  
+  /* Style the "Add" button */
+  .doneBtn {
+      margin-top: 6%;
+      margin-left:1%;
+    padding: 10px;
+    width: 80px;
+    height: 80px;
+    background: #685145;
+    color: #555;
+    float: left;
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 70px; 
+  }
+  
+  .doneBtn:hover {
+    background-color: #f2ece6;
+  }
+  
+
+
+
+
+  .frame{
+    margin-left:5%;
+    z-index: 4;
+    margin-right: 5%;
+    margin-top: 1%;
+    height: 360px;
+    overflow-y: scroll;
+  }
+  .frame::-webkit-scrollbar {
+    display: none;
+  }
+  .scroll {
+    margin-left:24%;
+    margin-right: 28%;
+    margin-top: 1%;
+    height: 365px;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    background-color: white;
+    padding-bottom: 1%;
+  }
+  .timetable {
+    width: auto; /* 523px */
+    height: auto; /* 120px */
+    overflow: visible;
+    white-space: pre;
+    font-weight: 400;
+    font-style: normal;
+    font-family: "Jua", serif;
+    color: #ffffff;
+    font-size: 50px;
+    letter-spacing: 0px;
+    line-height: 1.2;
+    text-align: center;
+  }
+  .unit {
+    width: auto; /* 699px */
+    height: auto; /* 94px */
+    overflow: visible;
+    white-space: pre;
+    font-weight: 400;
+    font-style: normal;
+    font-family: "Jua", serif;
+    color: #000000;
+    font-size: 40px;
+    letter-spacing: 0px;
+    line-height: 1.2;
+  }
+  .teacher {
+    width: auto; /* 298px */
+    height: auto; /* 76px */
+    overflow: visible;
+    white-space: pre;
+    font-weight: 400;
+    font-style: normal;
+    font-family: "Jua", serif;
+    color: #7b6f6f;
+    font-size: 25px;
+    letter-spacing: 0px;
+    line-height: 1.2;
+  }
+  .zoom-link {
+    width: auto; /* 233px */
+    height: auto; /* 58px */
+    overflow: visible;
+    white-space: pre;
+    font-weight: 400;
+    font-style: normal;
+    font-family: "Jua", serif;
+    color: #bfb0b0;
+    font-size: 20px;
+    letter-spacing: 0px;
+    line-height: 1.2;
+  }
+  .time {
+    width: auto; /* 223px */
+    height: auto; /* 120px */
+    overflow: visible;
+    white-space: pre;
+    font-weight: 400;
+    font-style: normal;
+    font-family: "Jua", serif;
+    color: #DBCFC5;
+    font-size: 100px;
+    letter-spacing: 0px;
+    line-height: 1.2;
+  }
+  .timetable-frame {
+    margin-left:1%;
+    margin-right: 1%;
+    margin-top: 3%;
+    height: 50px;
+    background-color: #dbcfc5;
+    overflow: visible;
+    border-radius: 70px;
+    padding-bottom: 3%;
+  }
+  .unit-frame {
+    margin-left:1%;
+    margin-right: 1%;
+    margin-top: 5%;
+    margin-bottom: 1%;
+    height: 150px;
+    background-color: #ffdf6f;
+    overflow: visible;
+    border-radius: 25px;
+    padding-top: 4%;
+    padding-left: 10%;
+    z-index: 9;
+  }
+  .time-frame {
+    width: 332px;
+    height: 332px;
+    background-color: #ffffff;
+    overflow: visible;
+  }
+
+
+
+
+  .clock-frame {
+    background-color: #685145;
+    text-align: center;
+    border-radius: 50px;
+    height: 13%;
+    width: 20%;
+    position: absolute;
+    left: 76%;
+    top: 27%;
+  }
+  .clock {
+    color: #f2ece6;
+    font-size: 100px;
+    font-family: 'Righteous', cursive;
+    letter-spacing: 5px;
+  }
+
+
+
+
+  .date-frame {
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+    border-radius: 25px;
+    height: 5%;
+    width: 20%;
+    position: absolute;
+    left: 51.5%;
+    top: 5%;
+  }
+  .date {
+    color: #685145;
+    font-size: 40px;
+    font-family: 'serif';
+    letter-spacing: 5px;
+  }
+
+
+
+
+
+  .frame-calender{
+    margin-left:10%;
+    z-index: 4;
+    margin-right: 5%;
+    margin-top: 7%;
+    height: 15%;
+    overflow-x: scroll;
+  }
+  .frame-calender::-webkit-scrollbar {
+    display: none;
+  }
+  .scroll-calender {
+    margin-left:28%;
+    margin-right: 28%;
+    margin-top: 7%;
+    height: 15%;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    background-color: white;
+  }
+  .grid {
+    display: grid;
+    grid-template-rows: repeat(var(--bs-rows, 1), 1fr);
+    grid-template-columns: repeat(var(--bs-columns, 14), 1fr);
+    gap: var(--bs-gap, 0.1rem);
+  }
+  .calender {
+      width: 149px;
+      height: 100px;
+      overflow: hidden;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      word-break: break-word;
+      font-weight: 400;
+      font-style: normal;
+      font-family: "Jua", serif;
+      color: #C39983;
+      font-size: 30px;
+      letter-spacing: 0px;
+      line-height: 1.1;
+      text-align: center;
+      margin-top: 25%;
+  }
+  #slideLeft{
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    background-color: #c39983;
+    border-radius: 70px;
+  border: none;
+  border-radius: 70px;
+  width: 3%;
+  padding: 10px;
+  float: left;
+  font-size: 30px;
+  color: White;
+  background-color: #c39983;
+  transition: 0.2s;
+  }
+
+  #slideRight {
+    position: absolute;
+    top: 25%;
+    left: 69%;
+    background-color: #c39983;
+    border-radius: 70px;
+  border: none;
+  border-radius: 70px;
+  width: 3%;
+  padding: 10px;
+  float: left;
+  font-size: 30px;
+  color: White;
+  background-color: #c39983;
+  transition: 0.2s;
+  }
+  #slideRight:hover {
+    background: lightblue;
+  }
+  #slideLeft:hover {
+    background: lightblue;
+  }
+
+  
+
+
+
+  .navigation{
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+    border-radius: 25px;
+    height: 40%;
+    width: 25%;
+    position: absolute;
+    left: 3.7%;
+    top: 15%;
+  }
+  .eachbutton{
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+    border-radius: 25px;
+    height: 30%;
+    width: 80%;
+  }
+  .nav-button{
+    margin-left: 3%;
+    margin-top: 1%;
+    border: none;
+    border-top-left-radius: 70px;
+    border-bottom-left-radius: 70px;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    float: left;
+    font-size: 60px;
+    background-color: #dbcfc5;
+    color: white;
+    transition: 0.2s;
+  }
+  .nav-button-other{
+    margin-left: 3%;
+    margin-top: 1%;
+    border: none;
+    border-top-left-radius: 70px;
+    border-bottom-left-radius: 70px;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    float: left;
+    color: #dbcfc5;
+    font-size: 60px;
+    background-color: white;  
+    transition: 0.2s;
+  }
+  .nav-button-other:hover {
+    background: lightblue;
+  }
+  .nav-button:hover {
+    background: lightblue;
+  }
+
+
+
+
+
+
+
+
+.profile{
+    height: 25%;
+    width: 20%;
+    position: absolute;
+    left: 76%;
+    top: 6%;
+}
+
+.profile img{
+    position: absolute;
+    height: 75%;
+    width: 46%;
+    background-color: #c39983;
+    border-radius: 50px;
+}
+
+.prof-name{
+    margin-left: 55%;
+    margin-top: 5%;
+    font-size: 40px;
+    color: #c39983;
+}
+
+.prof-school{
+    margin-left: 55%;
+    margin-top: 0;
+    font-size: 25px;
+    color: #dbcfc5;
+}
+
+.profile button{
+  margin-left: 0%;
+  margin-top: 5%;
+  border-radius: 70px;
+  font-size: 40px;
+  border: none;
+  width: 50%;
+  padding: 10px;
+  float: right;
+  font-size: 30px;
+  color: White;
+  background-color: #c39983;
+  transition: 0.2s;
+}
+
+.profile button:hover {
+    background: #ddd;
+  }
+
+
+
+
+
+
+
+
+
+.task{
+  height: 45%;
+  width: 23%;
+  position: absolute;
+  left: 3%;
+  top: 60%;
+}
+.task-title{
+  margin: 0;
+  border: none;
+  padding: 10px;
+  border-radius: 70px;
+  width: 85%;
+  padding: 10px;
+  float: left;
+  font-size: 30px;
+  color: White;
+  background-color: #c39983;
+  
+}
+.task select{
+  margin-top: 2%;
+  margin-bottom: 2%;
+  border: none;
+  padding: 10px;
+  border-radius: 70px;
+  width: 85%;
+  padding: 10px;
+  float: left;
+  font-size: 30px;
+  color: White;
+  background-color: #c39983;
+}
+
+.littles{
+  margin-top: 2%;
+  margin-left: 12%;
+  border: none;
+  border-radius: 70px;
+  width: 30%;
+  padding: 5px;
+  float: left;
+  font-size: 20px;
+  color: White;
+  background-color: #c39983;
+}
+.radio-title{
+    margin-top: 2%;
+  margin-left: 0;
+  width: 30%;
+  padding: 5px;
+  float: left;
+  font-size: 40px;
+  color: #c39983;
+}
+.radio{
+    margin-top: 2%;
+  margin-right: 0;
+  width: 30%;
+  padding: 5px;
+  float: left;
+  font-size: 25px;
+  color: #c39983;
+}
+
+.task-desc{
+  margin-top: 2%;
+  margin-bottom: 2%;
+  border: none;
+  border-radius: 25px;
+  padding: 10px;
+  height: 30%;
+  width: 85%;
+  padding: 15px;
+  float: left;
+  font-size: 30px;
+  color: White;
+  background-color: #c39983;
+}
+
+.save-button{
+  margin-top: 2%;
+  margin-bottom: 2%;
+  border: none;
+  border-radius: 70px;
+  width: 40%;
+  padding: 10px;
+  float: left;
+  font-size: 30px;
+  color: White;
+  background-color: #c39983;
+  transition: 0.2s;
+}
+.save-button:hover {
+  background: #ddd;
+}
+.cancel-button{
+  margin-top: 2%;
+  margin-left: 2%;
+  margin-bottom: 2%;
+  border: none;
+  border-radius: 70px;
+  width: 40%;
+  padding: 10px;
+  float: left;
+  font-size: 30px;
+  color: #c39983;
+  background-color: white;
+  transition: 0.2s;
+}
+.cancel-button:hover {
+  background: #ddd;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+.header {vertical-align: middle;}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1s;
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+/*
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+*/
+
+
+
+
+
+
+
+.friends{
+  position: absolute;
+  z-index: 10;
+  overflow-y: scroll;
+  display: table-cell;
+  border-radius: 25px;
+  height: 270px;
+  width: 272px;
+}
+
+.friends::-webkit-scrollbar {
+  display: none;
+}
+
+.friend-card{
+  margin-bottom: 1%;
+  background-color: #fff;
+  width: 92%;
+  height: 25%;
+  border-radius: 15px;
+  position: relative;
+}
+
+.friend-card img{
+  position: absolute;
+  margin-top: 2%;
+  margin-left:1%;
+  height: 80%;
+  background-color: rgb(29, 126, 139);
+  border-radius: 100%;
+}
+
+.ctc-name{
+  margin-left: 30%;
+  color: black;
+}
+
+.ctc-school{
+  margin-left: 30%;
+  color: black;
 }
