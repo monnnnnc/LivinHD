@@ -1,0 +1,89 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Inter-Bold", "Inter", sans-serif;
+}
+
+.menu-nav{
+    position: absolute;
+    z-index: 9;
+    margin-left: 80%;
+    margin-top: -62%;
+    font-weight: 5000;
+    font-size: 200px;
+}
+
+.frame {
+    width: 1400px;
+    height: 900px;
+    box-shadow: 5px 5px 4px 6px rgba(0, 0, 0, 0.55);
+    background-color: #cfe7ea;
+    overflow: visible;
+    border-radius: 89px;
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.frame .content {
+    width: 70%;
+    height: 80%;
+    background-color: #dbcfc5;
+    overflow: hidden;
+    border-radius: 50px;
+    padding: 1rem;
+}
+
+.content .title {
+    overflow: visible;
+    white-space: pre;
+    font-weight: 400;
+    font-style: normal;
+    font-family: "Just Me Again Down Here", cursive, serif;
+    color: #1d7e8b;
+    letter-spacing: 0px;
+    line-height: 1.2;
+    text-align: center;
+    padding: 1rem;
+    font-size: 5rem;
+}
+
+.invite {
+    width: 400px;
+    height: 500px;
+    background-color: rgba(239, 232, 179, 0.74);
+    overflow: visible;
+    border-radius: 45px;
+    padding: 20px;
+    font-weight: 400;
+    font-style: normal;
+    font-family: "Just Me Again Down Here", cursive, serif;
+    color: #638b1d;
+    letter-spacing: 0px;
+    line-height: 1.2;
+    font-size: 3rem;
+    padding: 1rem;
+}
+
+.row {
+    padding: 20px;
+}
+
+.btn-primary {
+    border-radius: 500px;
+    background-color: rgb(207, 231, 234);
+    border: none;
+    color: rgb(54, 60, 61);
+}
+
+.btn-primary:hover {
+    background-color: rgb(178, 196, 199);
+}
+
+.form-control {
+    border-radius: 500px;
+    background-color: rgb(242, 236, 230);
+    border: none;
+}
