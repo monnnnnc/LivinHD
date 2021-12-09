@@ -1,16 +1,3 @@
-/* .background {
-    background: url('home-page-bg.png');
-    background-size: cover;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: -1;
-    height: 125%;
-    overflow: scroll;
-} */
-
 .background {
     background: url('home-page-bg.png');
     width: 2480px;
@@ -21,18 +8,6 @@
     border-radius: 89px;
   }
 
-/* .background {
-    background: url('home-page-bg.png');
-    background-size: cover;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: -1;
-    height:100%;
-    overflow-y: scroll; 
-} */
 
 
 /* Include the padding and border in an element's total width and height */
@@ -157,21 +132,24 @@
     z-index: 4;
     margin-right: 5%;
     margin-top: 1%;
-    height: 360px;
+    height: 95%;
+    width: 90%;
     overflow-y: scroll;
+    position:absolute;
+    top: 0%;
   }
   .frame::-webkit-scrollbar {
     display: none;
   }
   .scroll {
-    margin-left:24%;
-    margin-right: 28%;
-    margin-top: 1%;
-    height: 365px;
-    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.25);
-    border-radius: 25px;
     background-color: white;
-    padding-bottom: 1%;
+    padding: 10px 10px 10px 10px;
+    border-radius: 50px;
+    height: 70%;
+    width: 45%;
+    position: absolute;
+    left: 26%;
+    top: 40%;
   }
   .timetable {
     width: auto; /* 523px */
@@ -314,30 +292,31 @@
 
 
   .frame-calender{
-    margin-left:10%;
     z-index: 4;
-    margin-right: 5%;
-    margin-top: 7%;
-    height: 15%;
+    height: 90%;
+    width: 83%;
     overflow-x: scroll;
+    position:absolute;
+    top: 30%;
+    left: 7%;
   }
   .frame-calender::-webkit-scrollbar {
     display: none;
   }
   .scroll-calender {
-    margin-left:28%;
-    margin-right: 28%;
-    margin-top: 7%;
-    height: 15%;
-    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.25);
-    border-radius: 25px;
     background-color: white;
+    border-radius: 50px;
+    height: 23%;
+    width: 45%;
+    position: absolute;
+    left: 26%;
+    top: 15%;
   }
   .grid {
     display: grid;
     grid-template-rows: repeat(var(--bs-rows, 1), 1fr);
     grid-template-columns: repeat(var(--bs-columns, 14), 1fr);
-    gap: var(--bs-gap, 0.1rem);
+    gap: var(--bs-gap, 1rem);
   }
   .calender {
       width: 149px;
@@ -350,11 +329,10 @@
       font-style: normal;
       font-family: "Jua", serif;
       color: #C39983;
-      font-size: 30px;
+      font-size: 50px;
       letter-spacing: 0px;
       line-height: 1.1;
       text-align: center;
-      margin-top: 25%;
   }
   #slideLeft{
     position: absolute;
@@ -362,15 +340,15 @@
     left: 25%;
     background-color: #c39983;
     border-radius: 70px;
-  border: none;
-  border-radius: 70px;
-  width: 3%;
-  padding: 10px;
-  float: left;
-  font-size: 30px;
-  color: White;
-  background-color: #c39983;
-  transition: 0.2s;
+    border: none;
+    border-radius: 70px;
+    width: 3%;
+    padding: 10px;
+    float: left;
+    font-size: 30px;
+    color: White;
+    background-color: #c39983;
+    transition: 0.2s;
   }
 
   #slideRight {
@@ -379,15 +357,15 @@
     left: 69%;
     background-color: #c39983;
     border-radius: 70px;
-  border: none;
-  border-radius: 70px;
-  width: 3%;
-  padding: 10px;
-  float: left;
-  font-size: 30px;
-  color: White;
-  background-color: #c39983;
-  transition: 0.2s;
+    border: none;
+    border-radius: 70px;
+    width: 3%;
+    padding: 10px;
+    float: left;
+    font-size: 30px;
+    color: White;
+    background-color: #c39983;
+    transition: 0.2s;
   }
   #slideRight:hover {
     background: lightblue;
@@ -661,14 +639,16 @@ body {font-family: Verdana, sans-serif; margin:0}
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: #bbb;
+  background-color: #c39983;
   border-radius: 50%;
+  color: white;
   display: inline-block;
   transition: background-color 0.6s ease;
 }
 
 .active, .dot:hover {
-  background-color: #717171;
+  background-color: #685145;
+  color: white;
 }
 
 /* Fading animation */
