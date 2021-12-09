@@ -46,6 +46,16 @@
     width: 7px;
   }
   
+  .header-1 {
+    text-align: left;
+    color:#c39983; 
+    height: 320px;
+    width: 272px;
+    position: absolute;
+    left: 950px;
+    top: 300px;
+  }
+
   /* Style the header */
   .header {
     background-color: #c39983;
@@ -445,4 +455,242 @@
   border-radius: 70px;
   width: 100%;
   font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+.task{
+  height: 300px;
+  width: 272px;
+  position: absolute;
+  left: 3%;
+  top: 60%;
+}
+.task-title{
+  margin: 0;
+  border: none;
+  border-radius: 70px;
+  width: 85%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+  color: White;
+  background-color: #c39983;
+  
+}
+.task select{
+  margin-top: 2%;
+  margin-bottom: 2%;
+  border: none;
+  border-radius: 70px;
+  width: 85%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+  color: White;
+  background-color: #c39983;
+}
+
+.littles{
+  margin-top: 2%;
+  margin-left: 12%;
+  border: none;
+  border-radius: 70px;
+  width: 30%;
+  padding: 5px;
+  float: left;
+  font-size: 12px;
+  color: White;
+  background-color: #c39983;
+}
+.radio-title{
+  margin-top: 0;
+  margin-left: 0;
+  width: 30%;
+  padding: 5px;
+  float: left;
+  font-size: 30px;
+  color: #c39983;
+}
+.radio{
+  margin-top: 2%;
+  margin-right: 0;
+  width: 30%;
+  padding: 5px;
+  float: left;
+  font-size: 16px;
+  color: #c39983;
+}
+
+.task-desc{
+  margin-top: 2%;
+  margin-bottom: 2%;
+  border: none;
+  border-radius: 70px;
+  width: 85%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+  color: White;
+  background-color: #c39983;
+}
+
+.save-button{
+  margin-top: 2%;
+  margin-bottom: 2%;
+  border: none;
+  border-radius: 70px;
+  width: 40%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+  color: White;
+  background-color: #c39983;
+  transition: 0.2s;
+}
+.save-button:hover {
+  background: #ddd;
+}
+.cancel-button{
+  margin-top: 2%;
+  margin-bottom: 2%;
+  border: none;
+  border-radius: 70px;
+  width: 40%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+  color: #c39983;
+  background-color: white;
+  transition: 0.2s;
+}
+.cancel-button:hover {
+  background: #ddd;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+.header {vertical-align: middle;}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1s;
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+/*
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+*/
+
+
+
+
+
+
+
+.friends{
+  position: absolute;
+  z-index: 10;
+  overflow-y: scroll;
+  display: table-cell;
+  border-radius: 25px;
+  height: 270px;
+  width: 272px;
+}
+
+.friends::-webkit-scrollbar {
+  display: none;
+}
+
+.friend-card{
+  margin-bottom: 1%;
+  background-color: #fff;
+  width: 92%;
+  height: 25%;
+  border-radius: 15px;
+  position: relative;
+}
+
+.friend-card img{
+  position: absolute;
+  margin-top: 2%;
+  margin-left:1%;
+  height: 80%;
+  background-color: rgb(29, 126, 139);
+  border-radius: 100%;
+}
+
+.ctc-name{
+  margin-left: 30%;
+  color: black;
+}
+
+.ctc-school{
+  margin-left: 30%;
+  color: black;
 }

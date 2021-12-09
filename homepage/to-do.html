@@ -35,6 +35,43 @@
 </div>
 </div>
 
+<!-- ADD TASK -->
+<div class="task">
+
+  <input type="text" id="myInput" placeholder="Title" class="task-title">
+
+  <select id="language" onChange="update()">
+    <option value="en">Do not repeat</option>
+    <option value="es">every week</option>
+    <option value="pt">every day</option>
+  </select>
+  <script></script>
+
+  <input type="text" class="littles" placeholder="Start Date" >
+  <input type="text" class="littles" placeholder="Start Date" >
+
+  <input type="text" class="littles" placeholder="Start Date" >
+  <input type="text" class="littles" placeholder="Start Date" >
+  
+  <div>
+  <div class="radio-title">
+  type:
+  </div>
+  <div class="radio">
+    <input type="radio" id="personal" name="drone" value="personal" checked>
+    <label for="personal">personal</label>
+  </div>
+  <div class="radio">
+    <input type="radio" id="official" name="drone" value="official">
+    <label for="official">official</label>
+  </div>
+  </div>
+
+  <input type="text" class="task-desc" placeholder="Add note...">
+
+  <button class="save-button">Save</button>
+  <button class="cancel-button">Cancel</button>
+</div>
 
 <!-- CALENDER -->
 <div class="scroll-calender">
@@ -128,7 +165,9 @@
 
 
 <!-- TODO LIST -->
-<div id="myDIV" class="header">
+
+<div class="header">
+<div class="mySlides fade">
 
 <ul id="myUL">
 
@@ -156,6 +195,89 @@
 </ul>
 
 </div>
+
+
+<!-- CHAT -->
+<div class="mySlides fade">
+
+  <div class="friends">
+    <div class="friend-card">
+      <img src="../icons/person.png">
+      <text class="ctc-name">Name</text><br>
+      <text class="ctc-school">School Of IT</text>
+    </div>
+
+    <div class="friend-card">
+        <img src="../icons/person.png">
+        <text class="ctc-name">Name</text><br>
+        <text class="ctc-school">School Of IT</text>
+    </div>
+
+    <div class="friend-card">
+      <img src="../icons/person.png">
+      <text class="ctc-name">Name</text><br>
+      <text class="ctc-school">School Of IT</text>
+    </div>
+
+    <div class="friend-card">
+        <img src="../icons/person.png">
+        <text class="ctc-name">Name</text><br>
+        <text class="ctc-school">School Of IT</text>
+    </div>
+
+    <div class="friend-card">
+      <img src="../icons/person.png">
+      <text class="ctc-name">Name</text><br>
+      <text class="ctc-school">School Of IT</text>
+    </div>
+
+    <div class="friend-card">
+        <img src="../icons/person.png">
+        <text class="ctc-name">Name</text><br>
+        <text class="ctc-school">School Of IT</text>
+    </div>
+  </div>
+
+</div>
+
+
+<!-- CONTACTS -->
+<div class="mySlides fade">
+  
+  <div class="friends">
+    <div class="friend-card">
+      <img src="../icons/person.png">
+      <text class="ctc-name">Name</text><br>
+      <text class="ctc-school">School Of IT</text>
+    </div>
+
+    <div class="friend-card">
+        <img src="../icons/person.png">
+        <text class="ctc-name">Name</text><br>
+        <text class="ctc-school">School Of IT</text>
+    </div>
+
+    <div class="friend-card">
+      <img src="../icons/person.png">
+      <text class="ctc-name">Name</text><br>
+      <text class="ctc-school">School Of IT</text>
+    </div>
+  </div>
+
+</div>
+
+
+</div>
+  <br>
+  
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+  </div>
+
+<script></script>
+
 
 <!-- CLOCK -->
 <div class="clock-frame">
@@ -244,6 +366,47 @@ buttonRight.onclick = function () {
 buttonLeft.onclick = function () {
   document.getElementById('scrolls').scrollLeft -= 100;
 };
+
+
+//toggle
+function update() {
+  var select = document.getElementById('language');
+  var option = select.options[select.selectedIndex];
+
+  document.getElementById('value').value = option.value;
+  document.getElementById('text').value = option.text;
+}
+
+update();
+
+
+//carousel
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
 
 </script>
 
